@@ -19,7 +19,7 @@ pub fn main() {
     println!("The value of y is {}", y);
 
     //Rust has datatypes that are actually sizes of variables
-    //Types that are used are: 
+    //Types that are used are:
     // i32 (32 bit signed integer)
     // i64 (64 bit signed integer)
     // u32 (32 bit unsigned integer)
@@ -27,17 +27,16 @@ pub fn main() {
     // f32 (32 bit signed float)
     // f64 (64 bit signed float)
 
-    let a: f32 = -5.5;
+    //Underscore next to variable name removes "unused variable" warning
+    let _a: f32 = -5.5;
     let b: u32 = 70;
 
     //if commands in rust
     if b > 65 {
         println!("If command!");
-    }
-    else if b == 70 {
+    } else if b == 70 {
         println!("Equal!!");
-    }
-    else {
+    } else {
         println!("Else command!!!");
     }
 }
