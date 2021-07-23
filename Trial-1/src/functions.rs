@@ -8,6 +8,9 @@ struct Color {
     blue: u8,
 }
 
+//tuple struct
+struct Color2(u8, u8, u8);
+
 pub fn main() {
     //using constant variable
     for n in 1..MAX_NUM {
@@ -58,6 +61,11 @@ pub fn main() {
     bg.green = 35;
     //they are accessable with the . syntax
     println!("{} {} {}", bg.red, bg.blue, bg.green);
+
+    //tuple structure
+    let mut red = Color2(255, 0, 0);
+    red.0 = 50;
+    println!("{} {} {}", red.0, red.1, red.2);
 }
 
 //defining a function
