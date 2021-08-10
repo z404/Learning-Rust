@@ -4,6 +4,12 @@ struct Person {
     age: u8,
 }
 
+//creating trait
+trait ToString {
+    fn to_string(&self) -> String;
+}
+
+//adding trait to structure
 impl ToString for Person {
     fn to_string(&self) -> String {
         return format!("I am {} and i am {} years old", self.name, self.age);
